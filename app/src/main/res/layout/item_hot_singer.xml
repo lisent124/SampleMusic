@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingHorizontal="16dp"
+    android:layout_height="96dp">
+
+    <ImageView
+        android:id="@+id/img_pic"
+        android:layout_width="72dp"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:layout_height="72dp"/>
+
+    <TextView
+        android:id="@+id/singer_name"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/lightBlue"
+        android:textSize="20sp"
+        tools:text="歌手名字"
+        android:layout_marginHorizontal="8dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/detail"
+        android:layout_width="@dimen/music_icon"
+        android:layout_height="@dimen/music_icon"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/icon_check" />
+
+
+</LinearLayout>
