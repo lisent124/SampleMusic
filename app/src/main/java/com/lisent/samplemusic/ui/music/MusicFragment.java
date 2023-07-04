@@ -31,6 +31,11 @@ import com.lisent.samplemusic.databinding.FragmentMusicBinding;
 import com.lisent.samplemusic.entity.Song;
 import com.lisent.samplemusic.ui.item.SongActivity;
 
+
+/**
+ * 歌曲的播放界面
+ * 包含广播的接收
+ */
 public class MusicFragment extends Fragment {
     private String TAG = "MusicFragment";
     private SongReceiver songInitReceiver = null;

@@ -22,7 +22,9 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-
+/**
+ * 播放MV的页面
+ */
 public class MvPlayActivity extends AppCompatActivity {
 
     private ActivityMvPlayBinding binding;

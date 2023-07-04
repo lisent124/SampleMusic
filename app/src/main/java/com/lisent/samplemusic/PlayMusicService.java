@@ -25,6 +25,11 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+/**
+ * 音乐播放service
+ * 通过广播与播放器页面数据同步
+ * 通过启动service 时带不同参数对歌曲播放 进行操作
+ */
 public class PlayMusicService extends Service {
     private String TAG = "PlayMusicService";
     private MediaPlayer mediaPlayer;
@@ -90,6 +95,21 @@ public class PlayMusicService extends Service {
         return super.onStartCommand(intent, flags, startId);
     }
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (mediaPlayer != null) {
+            mediaPlayer.stop();
+            mediaPlayer.release();
+        }
+        isSetData = false;
+    }
+
+    @Override
+    public IBinder onBind(Intent intent) {
+        return musicBinder;
+    }
+
     private Callback callback = new Callback<Data<List<ComUrl>>>() {
         @Override
         public void onResponse(Call<Data<List<ComUrl>>> call, Response<Data<List<ComUrl>>> response) {
@@ -148,16 +168,6 @@ public class PlayMusicService extends Service {
             isSetData = false;
         }
 
-    }
-
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        if (mediaPlayer != null) {
-            mediaPlayer.stop();
-            mediaPlayer.release();
-        }
-        isSetData = false;
     }
 
     public class MusicBinder extends Binder {
@@ -271,8 +281,5 @@ public class PlayMusicService extends Service {
 
 
     }
-    @Override
-    public IBinder onBind(Intent intent) {
-        return musicBinder;
-    }
+
 }

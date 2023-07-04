@@ -20,6 +20,11 @@ import com.lisent.samplemusic.sqlite.SongRecord;
 
 import java.util.List;
 
+
+/**
+ * 播放记录页面
+ * 通过调用sqlite中的数据 展示播放记录
+ */
 public class RecordFragment extends Fragment {
     private String TAG = "RecordFragment";
 
@@ -45,7 +50,6 @@ public class RecordFragment extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
         adapter = new SongAdapter(R.layout.item_song,"record");
         recyclerView.setAdapter(adapter);
-
 
         List<Song> songs = record.getSongs(0, 10);
         adapter.setList(songs);

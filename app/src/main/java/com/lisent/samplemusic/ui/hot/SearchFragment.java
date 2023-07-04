@@ -24,7 +24,9 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-
+/**
+ * 热门 搜索关键词 展示页面
+ */
 public class SearchFragment extends Fragment {
 
     private FragmentHotSearchBinding binding;

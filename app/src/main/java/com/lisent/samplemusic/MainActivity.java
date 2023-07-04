@@ -17,6 +17,9 @@ import androidx.navigation.ui.NavigationUI;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.lisent.samplemusic.databinding.ActivityMainBinding;
 
+/**
+ * 主页面 简单的Nav导航
+ */
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;

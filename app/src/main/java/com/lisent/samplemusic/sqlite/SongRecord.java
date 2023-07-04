@@ -12,6 +12,10 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+
+/**
+ * 一个操作 歌曲记录 的接口
+ */
 public class SongRecord {
     private MySQLiteHleper songPlayRecord ;
     private final String table = "songPlayRecord";

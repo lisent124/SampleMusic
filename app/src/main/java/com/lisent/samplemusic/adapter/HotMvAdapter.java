@@ -20,6 +20,7 @@ import com.lisent.samplemusic.ui.item.MvPlayActivity;
 
 import java.util.List;
 
+
 public class HotMvAdapter extends BaseQuickAdapter<Mv, BaseViewHolder> {
     public HotMvAdapter(int layoutResId) {
         super(layoutResId);

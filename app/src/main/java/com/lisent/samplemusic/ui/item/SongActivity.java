@@ -28,6 +28,12 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+/**
+ * 展示歌曲列表
+ * 可以有两个方向的class 而来
+ * loadSongFromSearch
+ * loadSongFromSinger
+ */
 public class SongActivity extends AppCompatActivity {
 
     String TAG = "SongActivity";

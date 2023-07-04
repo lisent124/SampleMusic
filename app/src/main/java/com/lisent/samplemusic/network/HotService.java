@@ -20,6 +20,9 @@ import retrofit2.http.POST;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
 
+/**
+ * 网络接口
+ */
 public interface HotService {
     /**
      * 返回热门歌手信息

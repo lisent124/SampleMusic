@@ -14,6 +14,9 @@ import com.lisent.samplemusic.adapter.HotPagerAdapter;
 import com.lisent.samplemusic.databinding.FragmentHotBinding;
 
 
+/**
+ * 热门页 主页面 通过viewPager 实现fragment的切换
+ */
 public class HotFragment extends Fragment {
 
     private FragmentHotBinding binding;

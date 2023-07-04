@@ -3,6 +3,9 @@ package com.lisent.samplemusic.network;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+/**
+ * 接口工厂
+ */
 public class NetEaseBaseApi {
     private static NetEaseBaseApi api;
 

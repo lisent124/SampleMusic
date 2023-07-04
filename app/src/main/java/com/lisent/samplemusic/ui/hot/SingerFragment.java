@@ -25,7 +25,9 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-
+/**
+ * 热门歌曲展示页面
+ */
 public class SingerFragment extends Fragment {
     private String TAG = "SingerFragment";
     private FragmentHotSingerBinding binding;

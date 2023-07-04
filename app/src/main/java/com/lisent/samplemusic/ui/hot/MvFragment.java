@@ -25,8 +25,10 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 
+/**
+ * 热门MV展示页面
+ */
 public class MvFragment extends Fragment {
-
 
     private FragmentHotMvBinding binding;
     private HotMvAdapter adapter;
