@@ -1,11 +1,21 @@
 # SampleMusic
+
 2023年 初学andriod实践项目。
+
+服务利用了四大组件中的activity service broadcast
+
+UI用到了 ViewPager 循环列表等 
+
 ## 项目功能
 热榜查看 包括热门歌手，热门搜索关键词，热门mv
+
 音乐播放 包括播放跳转，上下曲切换
+
 mv播放
+
 搜索歌曲
-播发记录查询
+
+播放记录查询
 
 ## 项目技术支持
 
